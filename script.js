@@ -1,6 +1,6 @@
 async function getCurrentWeatherByCity(city) {
     try {
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=bdf47532659b471bb5e174539240711&q=${city}&aqi=no&hours=24`);
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=bdf47532659b471bb5e174539240711&q=${city}&aqi=no&hours=24`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
